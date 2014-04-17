@@ -1,0 +1,16 @@
+{
+  "framework": "qunit",
+  "src_files": [
+    "vendor/jquery/dist/jquery.js",
+    "vendor/handlebars/handlebars.js",
+    "vendor/ember/ember.js",
+    "vendor/sinon/index.js",
+    "vendor/globals/main.js",
+    "https://js.stripe.com/v2/",
+    "http://localhost:4200/globals/main.js",
+    "vendor/jquery.payment/lib/jquery.payment.js",
+    "vendor/ember-qunit/dist/globals/main.js",
+    "test/test-helper.js",
+    "test/**/*-test.js"
+  ]
+}
