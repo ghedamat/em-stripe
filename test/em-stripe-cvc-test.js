@@ -7,3 +7,15 @@ test('renders', function() {
   this.append();
   equal(cvc.state, 'inDOM');
 });
+
+test('isValid', function() {
+  expect(4);
+  var input = this.subject();
+  equal(input.get('isValid'), false);
+  input.set('number', '4242424242424242');
+  equal(input.get('isValid'), false);
+  input.set('value', '22');
+  equal(input.get('isValid'), false);
+  input.set('value', '220');
+  equal(input.get('isValid'), true);
+});
